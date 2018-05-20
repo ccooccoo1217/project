@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<form method="post" id="registerform" action="../php/reg.php">
+				<div class="navTab" id="tab_nav">
+					<label class="tab-btn cur" style="margin-right:8px">
+						<input type="radio" name="myradio" id="tab-user" value="user" checked="checked">
+						用户名注册账号
+					</label>|
+					<label class="tab-btn" style="margin-left:8px">
+						<input type="radio" name="myradio" id="tab-email" value="email">
+						手机号注册账号
+					</label>
+				</div>
+				<div class="navCon" id="tab_con">
+					<div class="reg-use">
+						<dl>
+							<dd>
+								<div class="input-con">
+									<input type="text" id="username" name="username" placeholder="3-15字符长度，支持汉字、字母、数字及_">
+								</div>
+								<div class="checktip">
+									<span class="Validform_checktip"></span>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dd>
+								<div class="input-con">
+									<input type="password" id="password" placeholder="密码为6-16个字符" name="password">
+								</div>
+								<div class="checktip">
+									<span class="Validform_checktip"></span>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dd>
+								<div class="input-con">
+									<input type="text" id="user_captcha" name="user_captcha" placeholder="请输入验证码"style="width:232px;">
+									<div class="capcha capcha-user">
+										<a href="javascript:;">
+											<span>y6z8</span>
+										</a>
+									</div>
+								</div>
+								<span class="check_tips error_tip" id="user_captcha_succ_tag"></span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="regfooterbar" style="width:360px;margin-left:8px;">
+					<div class="safe">
+						<div id="theAgreement" style="text-align:left;margin-bottom:10px">
+							<input type="checkbox" checked="checked" title="需要同意《用户服务协议》" name="agreement" id="agreement">我已阅读并接受
+							<a title="用户协议" target="_blank">用户协议</a>
+							          和
+							<a title="隐私政策" target="_blank">隐私政策</a>
+						</div>
+						<div id="theAgreementAdvice" class="hint clear"></div>
+					</div>
+					<div class="buttons">
+						<input type="submit" class="btn" value="提    交" name="submit" id="regButton">
+					</div>
+					<p style="text-align:right;">已有账号，
+						<a style="color:#e8380d;" href="login.html">直接登录</a>
+					</p>
+				</div>
+			</form>
+        </div>
+        <div id="nb-footer">
+        	<div class="nubia-copyright">
+        		<p class="nb-footer-info">
+        			2012-2017 努比亚 版权所有
+        			<a>粤ICP备10006213号-2</a>
+        			ICP经营许可证编号：粤B2-20120688
+        			<a target="_blank" style="margin-right: 5px;margin-left: 3px;">
+        				<img src="https://account.nubia.com/res1/images/govIcon.png" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;">
+        			</a>
+        			努比亚技术有限公司
+        		</p>
+        	</div>
+        </div>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/register.js"></script>
+	</body>
+</html>

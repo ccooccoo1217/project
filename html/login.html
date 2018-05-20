@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<form id="loginForm">
+				<div class="navTab" id="tab_nav">
+					<label class="tab-btn cur" style="margin-right:8px">
+						<input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked">
+						           用户名登录
+					</label>|
+					<label class="tab-btn" style="margin-left:8px">
+						<input type="radio" name="myradio" id="tab-email" value="email">
+						           手机号登录
+					</label>
+				</div>
+
+				<div class="navCon" id="tab_con">
+					<div class="reg-id">
+						<dl>
+							<dd>
+	                            <div class="input-con">
+	                            	<input type="text" id="username" name="username" placeholder="用户名"> 
+	                            	<span class="icon-id" style="color: red;"></span>
+	                            </div>
+							</dd>
+						</dl>
+						<dl>
+							<dd>
+								<div class="input-con">
+	                                <input type="password" id="password" name="password" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）">
+	                            </div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div id="tips"></div>
+				<input type="hidden" name="back_url" >
+				<input type="button" style="margin-top:10px" id="login_btn_id" value="立即登录" class="btn-login">
+				<div class="register-now">
+					<a style="color:#e8380d" href="register.html">注册新账号</a>
+					<span style="font-size: 18px;padding: 0 7px;color: #d5d5d5;">|</span>
+					<a style="color:#34383d">忘记密码?</a>
+				</div>
+			</form>
+		</div>
+		<div id="nb-footer">
+            <div class="nubia-copyright">
+            	<p class="nb-footer-info"> 2012-2017 努比亚 版权所有 
+            		<a>粤ICP备10006213号-2</a>
+    		        ICP经营许可证编号：粤B2-20120688
+    		        <a  target="_blank" style="margin-right: 5px;margin-left: 3px;">
+    		        	<img src="https://account.nubia.com/res1/images/govIcon.png" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;">
+    		        </a> 努比亚技术有限公司</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
+	</body>
+</html>
